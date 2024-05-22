@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./estilos/styles.css">
+
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/main.js"></script>
+  
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+  <main>
+    <section class="contenedor">
+      <h1 class="titulo">Contact Us</h1>
+
+      <form class="formulario">
+
+        <div class="campo">
+          <label>First Name</label>
+          <input type="text" id="nombre">
+          <span class="error" id="error-nombre">This field is required</span>
+        </div>
+
+        <div class="campo">
+          <label>Last Name</label>
+          <input type="text" id="apellido">
+          <span class="error" id="error-apellido">This field is required</span>
+        </div>
+
+        <div class="campo">
+          <label>Email Address</label>
+          <input type="email" name="" id="correo">
+          <span class="error" id="error-correo">Please enter a valid email address</span>
+        </div>
+
+        <div class="campo">
+          <label>Query Type</label>
+          <div class="contenedor-radios">
+            <div class="radio">
+              <span><input type="radio" name="query" id="radio1" placeholder="General Enquiry">General Enquiry</span>
+            </div>
+            <div class="radio">
+              <span><input type="radio" name="query" id="radio2" placeholder="General Enquiry">Support Request</span>
+            </div>
+          </div>
+          <span class="error" id="error-radio">Please select a query type</span>
+        </div>
+
+        <div class="campo">
+          <label>Message</label>
+          <textarea id="mensaje"></textarea>
+          <span class="error" id="error-mensaje">This field is required</span>
+        </div>
+
+        <div class="check">
+          <span><input type="checkbox" class="check" id="check">I consent to being contacted by the team *</span>
+          <span class="error" id="error-check"><br>To submit this form, please consent to being contacted</span>
+        </div>
+
+      </form>
+
+      <div class="contenedor-btn">
+        <button class="submit" id="submit">Submit</button>
+      </div>
+      
+
+    </section>
+
+    <div class="mensaje-success" id="mensaje-success">
+      <div class="primer-parrafo">
+        <img src="./assets/images/icon-success-check.svg" alt="">
+        <h2>Message Sent!</h2>
+      </div>
+      <p class="agradecimiento">Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+  </main>
+
+</body>
+</html>
